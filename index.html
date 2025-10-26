@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesa Simu - Phone Exchange Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cart-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+    <div class="cash-container">
+        <span class="cash-note">💵</span>
+        <span class="cash-note">💵</span>
+        <span class="cash-note">💵</span>
+        <span class="cash-note">💵</span>
+        <span class="cash-note">💵</span>
+    </div>
+    <i class="fas fa-mobile-alt"></i>
+    <span>Pata Simu</span>
+</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#buy">Buy</a>
+                <a href="#sell">Sell</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Main Scripts -->
+        <script src="phone-details.js"></script>
+        <script src="script.js" defer></script>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Welcome to Pesa Simu</h1>
+                <p>Your trusted platform for buying and selling phones in Kenya</p>
+                <div class="cta-buttons">
+                    <a href="#buy" class="btn btn-primary">Buy a Phone</a>
+                    <a href="#sell" class="btn btn-secondary">Sell Your Phone</a>
+                </div>
+            </div>
+            <!-- Hero Image with Background Image -->
+            <div class="hero-image-container">
+                <div class="hero-image-content">
+                    <h2>Buy & Sell With Confidence</h2>
+                    <p>Trusted by thousands of Kenyans for safe phone transactions</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="buy" class="section">
+            <div class="container">
+                <h2>Buy Phones</h2>
+                <div class="phone-grid">
+    <!-- iPhone Models -->
+    <div class="phone-card" data-category="iphone">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg" alt="iPhone 15 Pro Max">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="iphone-15-pro-max">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>iPhone 15 Pro Max</h3>
+            <p class="price">KSh 205,000</p>
+            <p class="specs">256GB • 6.7" • A17 Pro</p>
+            <button class="btn btn-add-to-cart" data-phone="iphone-15-pro-max">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="phone-card" data-category="iphone">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-max-1.jpg" alt="iPhone 14 Pro">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="iphone-14-pro">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>iPhone 14 Pro</h3>
+            <p class="price">KSh 170,000</p>
+            <p class="specs">256GB • 6.1" • A16 Bionic</p>
+            <button class="btn btn-add-to-cart" data-phone="iphone-14-pro">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Samsung Models -->
+    <div class="phone-card" data-category="samsung">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s23-ultra-5g-1.jpg" alt="Samsung S23 Ultra">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="s23-ultra">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Samsung S23 Ultra</h3>
+            <p class="price">KSh 175,000</p>
+            <p class="specs">512GB • 6.8" • Snapdragon 8 Gen 2</p>
+            <button class="btn btn-add-to-cart" data-phone="s23-ultra">Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="phone-card" data-category="samsung">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-z-fold5-1.jpg" alt="Samsung Z Fold 5">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="z-fold5">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Samsung Z Fold 5</h3>
+            <p class="price">KSh 225,000</p>
+            <p class="specs">512GB • 7.6" • Snapdragon 8 Gen 2</p>
+            <button class="btn btn-add-to-cart" data-phone="z-fold5">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Google Pixel -->
+    <div class="phone-card" data-category="google">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/google/google-pixel-8-pro-1.jpg" alt="Google Pixel 8 Pro">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="pixel8-pro">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Google Pixel 8 Pro</h3>
+            <p class="price">KSh 150,000</p>
+            <p class="specs">256GB • 6.7" • Google Tensor G3</p>
+            <button class="btn btn-add-to-cart" data-phone="pixel8-pro">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Xiaomi -->
+    <div class="phone-card" data-category="xiaomi">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-13t-pro-1.jpg" alt="Xiaomi 13T Pro">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="xiaomi-13t-pro">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Xiaomi 13T Pro</h3>
+            <p class="price">KSh 95,000</p>
+            <p class="specs">512GB • 6.67" • Dimensity 9200+</p>
+            <button class="btn btn-add-to-cart" data-phone="xiaomi-13t-pro">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- OnePlus -->
+    <div class="phone-card" data-category="oneplus">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-11-1.jpg" alt="OnePlus 11">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="oneplus-11">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>OnePlus 11</h3>
+            <p class="price">KSh 110,000</p>
+            <p class="specs">256GB • 6.7" • Snapdragon 8 Gen 2</p>
+            <button class="btn btn-add-to-cart" data-phone="oneplus-11">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Tecno -->
+    <div class="phone-card" data-category="tecno">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/tecno/tecno-phantom-v-fold-1.jpg" alt="Tecno Phantom V Fold">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="phantom-v-fold">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Tecno Phantom V Fold</h3>
+            <p class="price">KSh 135,000</p>
+            <p class="specs">256GB • 7.85" • Dimensity 9000+</p>
+            <button class="btn btn-add-to-cart" data-phone="phantom-v-fold">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Infinix -->
+    <div class="phone-card" data-category="infinix">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/infinix/infinix-zero-30-5g-1.jpg" alt="Infinix Zero 30 5G">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="zero-30-5g">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Infinix Zero 30 5G</h3>
+            <p class="price">KSh 45,000</p>
+            <p class="specs">256GB • 6.78" • Dimensity 8020</p>
+            <button class="btn btn-add-to-cart" data-phone="zero-30-5g">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Nokia -->
+    <div class="phone-card" data-category="nokia">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/nokia/nokia-g42-5g-1.jpg" alt="Nokia G42 5G">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="nokia-g42">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Nokia G42 5G</h3>
+            <p class="price">KSh 32,000</p>
+            <p class="specs">128GB • 6.56" • Snapdragon 480+</p>
+            <button class="btn btn-add-to-cart" data-phone="nokia-g42">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Realme -->
+    <div class="phone-card" data-category="realme">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/realme/realme-11-pro-plus-1.jpg" alt="Realme 11 Pro+">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="realme-11pro">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Realme 11 Pro+</h3>
+            <p class="price">KSh 65,000</p>
+            <p class="specs">512GB • 6.7" • Dimensity 7050</p>
+            <button class="btn btn-add-to-cart" data-phone="realme-11pro">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Itel -->
+    <div class="phone-card" data-category="itel">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/itel/itel-p55-5g-1.jpg" alt="Itel P55 5G">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="p55-5g">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Itel P55 5G</h3>
+            <p class="price">KSh 25,000</p>
+            <p class="specs">128GB • 6.6" • Dimensity 6080</p>
+            <button class="btn btn-add-to-cart" data-phone="p55-5g">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- iPhone 13 -->
+    <div class="phone-card" data-category="iphone">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-13-01.jpg" alt="iPhone 13">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="iphone-13">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>iPhone 13</h3>
+            <p class="price">KSh 115,000</p>
+            <p class="specs">128GB • 6.1" • A15 Bionic</p>
+            <button class="btn btn-add-to-cart" data-phone="iphone-13">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Samsung A54 5G -->
+    <div class="phone-card" data-category="samsung">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a54-5g-1.jpg" alt="Samsung A54 5G">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="samsung-a54">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Samsung A54 5G</h3>
+            <p class="price">KSh 55,000</p>
+            <p class="specs">128GB • 6.4" • Exynos 1380</p>
+            <button class="btn btn-add-to-cart" data-phone="samsung-a54">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Redmi Note 12 Pro -->
+    <div class="phone-card" data-category="xiaomi">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/xiaomi/xiaomi-redmi-note-12-pro-plus-5g-1.jpg" alt="Redmi Note 12 Pro">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="redmi-note12-pro">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Redmi Note 12 Pro</h3>
+            <p class="price">KSh 42,000</p>
+            <p class="specs">256GB • 6.67" • Dimensity 1080</p>
+            <button class="btn btn-add-to-cart" data-phone="redmi-note12-pro">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Oppo Reno 10 -->
+    <div class="phone-card" data-category="oppo">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/oppo/oppo-reno10-5g-1.jpg" alt="Oppo Reno 10">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="oppo-reno10">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Oppo Reno 10</h3>
+            <p class="price">KSh 58,000</p>
+            <p class="specs">256GB • 6.7" • Snapdragon 778G</p>
+            <button class="btn btn-add-to-cart" data-phone="oppo-reno10">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Vivo V29 -->
+    <div class="phone-card" data-category="vivo">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/vivo/vivo-v29-5g-1.jpg" alt="Vivo V29">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="vivo-v29">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Vivo V29</h3>
+            <p class="price">KSh 62,000</p>
+            <p class="specs">256GB • 6.78" • Snapdragon 778G+</p>
+            <button class="btn btn-add-to-cart" data-phone="vivo-v29">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Motorola Edge 40 -->
+    <div class="phone-card" data-category="motorola">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/motorola/motorola-edge-40-1.jpg" alt="Motorola Edge 40">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="moto-edge40">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Motorola Edge 40</h3>
+            <p class="price">KSh 75,000</p>
+            <p class="specs">256GB • 6.55" • Dimensity 8020</p>
+            <button class="btn btn-add-to-cart" data-phone="moto-edge40">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Nothing Phone 2 -->
+    <div class="phone-card" data-category="nothing">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/nothing/nothing-phone-2-1.jpg" alt="Nothing Phone 2">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="nothing-phone2">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Nothing Phone 2</h3>
+            <p class="price">KSh 85,000</p>
+            <p class="specs">256GB • 6.7" • Snapdragon 8+ Gen 1</p>
+            <button class="btn btn-add-to-cart" data-phone="nothing-phone2">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Asus ROG Phone 7 -->
+    <div class="phone-card" data-category="gaming">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/asus/asus-rog-phone-7-1.jpg" alt="Asus ROG Phone 7">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="rog-phone7">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Asus ROG Phone 7</h3>
+            <p class="price">KSh 145,000</p>
+            <p class="specs">512GB • 6.78" • Snapdragon 8 Gen 2</p>
+            <button class="btn btn-add-to-cart" data-phone="rog-phone7">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Huawei P60 Pro -->
+    <div class="phone-card" data-category="huawei">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/huawei/huawei-p60-pro-1.jpg" alt="Huawei P60 Pro">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="huawei-p60pro">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Huawei P60 Pro</h3>
+            <p class="price">KSh 135,000</p>
+            <p class="specs">512GB • 6.67" • Snapdragon 8+ Gen 1</p>
+            <button class="btn btn-add-to-cart" data-phone="huawei-p60pro">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Sony Xperia 1 V -->
+    <div class="phone-card" data-category="sony">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/sony/sony-xperia-1-v-1.jpg" alt="Sony Xperia 1 V">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="xperia-1v">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Sony Xperia 1 V</h3>
+            <p class="price">KSh 155,000</p>
+            <p class="specs">256GB • 6.5" • Snapdragon 8 Gen 2</p>
+            <button class="btn btn-add-to-cart" data-phone="xperia-1v">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Nokia XR21 -->
+    <div class="phone-card" data-category="nokia">
+        <div class="phone-image">
+            <img src="https://fdn2.gsmarena.com/vv/pics/nokia/nokia-xr21-1.jpg" alt="Nokia XR21">
+            <div class="phone-overlay">
+                <button class="btn btn-view" data-phone="nokia-xr21">View Details</button>
+            </div>
+        </div>
+        <div class="phone-info">
+            <h3>Nokia XR21</h3>
+            <p class="price">KSh 68,000</p>
+            <p class="specs">128GB • 6.49" • Snapdragon 695</p>
+            <button class="btn btn-add-to-cart" data-phone="nokia-xr21">Add to Cart</button>
+        </div>
+    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sell" class="section bg-light">
+            <div class="container">
+                <h2>Sell Your Phone</h2>
+                <form class="sell-form">
+                    <input type="text" placeholder="Phone Model" required>
+                    <input type="text" placeholder="Condition (New/Used)" required>
+                    <input type="tel" placeholder="Your Phone Number" required>
+                    <button type="submit" class="btn">Get Quote</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Pesa Simu is Kenya's leading platform for buying and selling used phones at the best prices. We provide a safe and reliable way to trade your devices with guaranteed payments and quality assurance.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pesa Simu</h3>
+                    <p>Your trusted platform for buying and selling phones in Kenya.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#buy">Buy Phones</a></li>
+                        <li><a href="#sell">Sell Your Phone</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@pesasimu.co.ke</p>
+                    <p>Phone: +254 700 000000</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Pesa Simu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal for phone details -->
+    <div id="phoneModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="phoneDetails">
+                <!-- Content will be loaded by JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart <span id="cartCount">0</span></h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <!-- Cart items will be added here by JavaScript -->
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">KSh 0</span>
+            </div>
+            <button id="checkoutBtn" class="btn btn-primary btn-block" disabled>Proceed to Checkout</button>
+        </div>
+    </div>
+    
+    <!-- Cart Button -->
+    <button id="cartButton" class="cart-button">
+        <span class="cart-icon">🛒</span>
+        <span id="cartBadge" class="cart-badge">0</span>
+    </button>
+
+    <!-- Phone Details Modal -->
+    <div id="phoneModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalPhoneImage" src="" alt="Phone Image">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modalPhoneName"></h2>
+                    <p class="modal-price" id="modalPhonePrice"></p>
+                    <div class="specs-grid" id="phoneSpecs">
+                        <!-- Specs will be inserted here by JavaScript -->
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary btn-add-to-cart" id="addToCartModal">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary" onclick="closePhoneModal()">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="cart.css">
+    
+    <!-- Scripts -->
+    <script src="phone-details.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
